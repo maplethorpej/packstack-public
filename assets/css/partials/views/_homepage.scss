@@ -1,0 +1,27 @@
+.introduction {
+  min-height: 600px;
+  background: #FFF url('../img/bg1.jpg') no-repeat top center;
+
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+
+  .logo {
+    padding-top: 130px;
+    text-align: center;
+
+    i {
+      color: #FFF;
+      font-size: 80px;
+    }
+
+    img {
+
+    }
+  }
+
+  h1 {
+    color: #FFF;
+  }
+}
