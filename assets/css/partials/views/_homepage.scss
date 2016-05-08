@@ -45,6 +45,7 @@
 
 .details {
   height: 320px;
+  margin: 0;
   background: #FFF;
 
   &__background {
@@ -78,5 +79,62 @@
         background-color: $green-shade;
       }
     }
+  }
+}
+
+.example {
+  margin-top: 80px;
+  position: relative;
+  overflow: hidden;
+
+  &__img {
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 134px;
+    transition: .4s all ease;
+    background: rgba(0, 0, 0, .25);
+
+    h3 {
+      color: #FFF;
+    }
+  }
+
+  &:hover {
+
+    .example__title {
+      padding-top: 40px;
+      background: rgba(0, 0, 0, .85);
+    }
+
+    .title__text {
+      opacity: 1;
+    }
+  }
+
+}
+
+.title__text {
+  transition: .4s opacity ease;
+  opacity: 0;
+  color: #FFF;
+  padding: 20px;
+  text-align: left;
+  margin-left: 20px;
+  list-style-type: circle;
+
+  li {
+    margin-bottom: 20px;
   }
 }

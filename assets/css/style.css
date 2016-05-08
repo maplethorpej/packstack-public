@@ -116,6 +116,10 @@ h2 {
   font-size: 28px;
   font-weight: 700; }
 
+h3 {
+  font-weight: 700;
+  font-size: 34px; }
+
 header {
   width: 100%;
   z-index: 99;
@@ -181,6 +185,7 @@ header {
 
 .details {
   height: 320px;
+  margin: 0;
   background: #FFF; }
   .details__background {
     background: url("../img/pack-spread.jpg") center center no-repeat;
@@ -205,5 +210,41 @@ header {
       display: block; }
       .details__text .btn:hover, .details__text .navigation__btn:hover {
         background-color: #0FB254; }
+
+.example {
+  margin-top: 80px;
+  position: relative;
+  overflow: hidden; }
+  .example__img img {
+    width: 100%;
+    display: block; }
+  .example__title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 134px;
+    transition: .4s all ease;
+    background: rgba(0, 0, 0, 0.25); }
+    .example__title h3 {
+      color: #FFF; }
+  .example:hover .example__title {
+    padding-top: 40px;
+    background: rgba(0, 0, 0, 0.85); }
+  .example:hover .title__text {
+    opacity: 1; }
+
+.title__text {
+  transition: .4s opacity ease;
+  opacity: 0;
+  color: #FFF;
+  padding: 20px;
+  text-align: left;
+  margin-left: 20px;
+  list-style-type: circle; }
+  .title__text li {
+    margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */
