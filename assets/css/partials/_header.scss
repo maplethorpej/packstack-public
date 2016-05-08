@@ -1,0 +1,61 @@
+header {
+  width: 100%;
+  position: fixed;
+  padding: 20px;
+  transition: all 0.4s ease;
+
+  &.sticky {
+    background-color: rgba(255, 255, 255, .9);
+
+    .navigation {
+
+      &__btn {
+        box-shadow: none;
+      }
+
+      &__social {
+        color: #454545;
+      }
+    }
+  }
+}
+
+.navigation {
+  float: right;
+
+  a, i {
+    transition: .2s all ease;
+  }
+
+  li {
+    float: left;
+    margin-left: 20px;
+  }
+
+  &__btn {
+    color: #FFF;
+    background-color: $orange;
+    text-decoration: none;
+    margin-right: 24px;
+    padding: 7px 14px;
+    border-radius: 3px;
+    font-weight: 400;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.075);
+
+    &:hover {
+      background-color: $orange-shade;
+    }
+  }
+
+  &__social {
+    color: #FFF;
+    font-size: 22px;
+    line-height: 1em;
+
+    &:hover {
+      i {
+        color: $orange;
+      }
+    }
+  }
+}

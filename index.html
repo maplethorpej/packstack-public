@@ -9,27 +9,81 @@
 </head>
 <body>
 
-<div class="introduction">
+<header>
+    <div class="inner">
+        <div class="row between-sm">
 
-    <div class="logo">
-        <i class="fa fa-paper-plane"></i>
-        <h1>Packing lists for backpackers,<br>hikers and explorers.</h1>
+            <div class="col-sm-4 logo">
+                <i class="fa fa-paper-plane"></i>
+            </div>
+
+            <div class="col-sm-6">
+                <ul class="navigation">
+                    <li><a href="#" class="navigation__btn">Submit a Pack</a></li>
+                    <li><a href="#" class="navigation__social" target="_blank">
+                        <i class="fa fa-facebook-square"></i>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/packstackio/" class="navigation__social" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a></li>
+                    <li><a href="https://twitter.com/PackStackIO" class="navigation__social" target="_blank">
+                        <i class="fa fa-twitter-square"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+</header>
 
-    <form action="#" class="cta-form">
-        <div class="cta-form__explanation">
-            <p>Sign up and we'll let you know when we launch</p>
+<div class="introduction">
+    <div class="inner">
+        <div class="logo">
+            <i class="fa fa-paper-plane"></i>
+            <h1>Packing lists for backpackers,<br>hikers and explorers.</h1>
         </div>
-        <div class="cta-form__container">
-            <input type="email" name="_email" placeholder="Email address">
-            <button type="submit">Sign Up</button>
-        </div>
-    </form>
 
+        <form class="cta-form"
+              action="//packstack.us13.list-manage.com/subscribe/post?u=d1b10ae00de0e1f1145c8f148&amp;id=f5fcd41ded"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate>
+
+            <div class="cta-form__explanation">
+                <p>Sign up and we'll let you know when we launch</p>
+            </div>
+
+            <div class="cta-form__container">
+                <input type="email" placeholder="Email address" class="email required" name="EMAIL" id="mce-EMAIL">
+
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_d1b10ae00de0e1f1145c8f148_f5fcd41ded" tabindex="-1" value="">
+                </div>
+
+                <button type="submit" name="subscribe" id="mc-embedded-subscribe">Sign Up</button>
+            </div>
+        </form>
+    </div>
 </div>
 
+<div class="info-panel">
+    <div class="inner">
+        <div class="row details">
+            <div class="col-md-8 details__background">
+                &nbsp;
+            </div>
+            <div class="col-md-4 details__text">
+                <h2>Your pack's got your back.</h2>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="assets/js/functions.js"></script>
 
 </body>
 </html>

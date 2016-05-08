@@ -31,3 +31,30 @@
     margin: 0 auto;
   }
 }
+
+.inner {
+  max-width: 1040px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.info-panel {
+  padding: 40px 0;
+  background-color: $light-gray;
+}
+
+.details {
+  height: 320px;
+
+  &__background {
+    background: #FFF url('../img/pack-spread.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    height: 100%;
+  }
+
+  &__text {
+    background: #FFF;
+  }
+}

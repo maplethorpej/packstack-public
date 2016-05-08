@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -105,6 +105,43 @@ h1 {
   font-size: 32px;
   font-weight: 300; }
 
+header {
+  width: 100%;
+  position: fixed;
+  padding: 20px;
+  transition: all 0.4s ease; }
+  header.sticky {
+    background-color: rgba(255, 255, 255, 0.9); }
+    header.sticky .navigation__btn {
+      box-shadow: none; }
+    header.sticky .navigation__social {
+      color: #454545; }
+
+.navigation {
+  float: right; }
+  .navigation a, .navigation i {
+    transition: .2s all ease; }
+  .navigation li {
+    float: left;
+    margin-left: 20px; }
+  .navigation__btn {
+    color: #FFF;
+    background-color: #E66D14;
+    text-decoration: none;
+    margin-right: 24px;
+    padding: 7px 14px;
+    border-radius: 3px;
+    font-weight: 400;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.075); }
+    .navigation__btn:hover {
+      background-color: #CE5F0D; }
+  .navigation__social {
+    color: #FFF;
+    font-size: 22px;
+    line-height: 1em; }
+    .navigation__social:hover i {
+      color: #E66D14; }
+
 .introduction {
   min-height: 600px;
   background: #FFF url("../img/bg1.jpg") no-repeat top center;
@@ -124,5 +161,25 @@ h1 {
   .introduction .cta-form {
     width: 360px;
     margin: 0 auto; }
+
+.inner {
+  max-width: 1040px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.info-panel {
+  padding: 40px 0;
+  background-color: #EDEFED; }
+
+.details {
+  height: 320px; }
+  .details__background {
+    background: #FFF url("../img/pack-spread.jpg") center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    height: 100%; }
+  .details__text {
+    background: #FFF; }
 
 /*# sourceMappingURL=style.css.map */
