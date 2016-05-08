@@ -39,15 +39,16 @@
 }
 
 .info-panel {
-  padding: 40px 0;
+  padding: 60px 0;
   background-color: $light-gray;
 }
 
 .details {
   height: 320px;
+  background: #FFF;
 
   &__background {
-    background: #FFF url('../img/pack-spread.jpg') center center no-repeat;
+    background: url('../img/pack-spread.jpg') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -55,6 +56,27 @@
   }
 
   &__text {
+    padding: 0 35px;
     background: #FFF;
+
+    p {
+      color: #666;
+      margin: 20px 0;
+      font-size: 17px;
+      line-height: 1.5em;
+    }
+
+    .btn {
+      width: 100%;
+      background-color: $green;
+      padding: 14px 20px;
+      text-align: center;
+      font-size: 18px;
+      display: block;
+
+      &:hover {
+        background-color: $green-shade;
+      }
+    }
   }
 }

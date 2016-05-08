@@ -95,7 +95,13 @@ input {
   text-align: center;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.9); }
 
-h1, h2, h3, h4, h5, h6, p, a {
+.btn, .navigation__btn {
+  color: #FFF;
+  border-radius: 3px;
+  font-weight: 400;
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6, p, a, span {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Lato', sans-serif;
@@ -105,10 +111,16 @@ h1 {
   font-size: 32px;
   font-weight: 300; }
 
+h2 {
+  color: #555;
+  font-size: 28px;
+  font-weight: 700; }
+
 header {
   width: 100%;
-  position: fixed;
+  z-index: 99;
   padding: 20px;
+  position: fixed;
   transition: all 0.4s ease; }
   header.sticky {
     background-color: rgba(255, 255, 255, 0.9); }
@@ -125,13 +137,9 @@ header {
     float: left;
     margin-left: 20px; }
   .navigation__btn {
-    color: #FFF;
     background-color: #E66D14;
-    text-decoration: none;
     margin-right: 24px;
     padding: 7px 14px;
-    border-radius: 3px;
-    font-weight: 400;
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.075); }
     .navigation__btn:hover {
       background-color: #CE5F0D; }
@@ -168,18 +176,34 @@ header {
   margin: 0 auto; }
 
 .info-panel {
-  padding: 40px 0;
+  padding: 60px 0;
   background-color: #EDEFED; }
 
 .details {
-  height: 320px; }
+  height: 320px;
+  background: #FFF; }
   .details__background {
-    background: #FFF url("../img/pack-spread.jpg") center center no-repeat;
+    background: url("../img/pack-spread.jpg") center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     height: 100%; }
   .details__text {
+    padding: 0 35px;
     background: #FFF; }
+    .details__text p {
+      color: #666;
+      margin: 20px 0;
+      font-size: 17px;
+      line-height: 1.5em; }
+    .details__text .btn, .details__text .navigation__btn {
+      width: 100%;
+      background-color: #0DC45B;
+      padding: 14px 20px;
+      text-align: center;
+      font-size: 18px;
+      display: block; }
+      .details__text .btn:hover, .details__text .navigation__btn:hover {
+        background-color: #0FB254; }
 
 /*# sourceMappingURL=style.css.map */
