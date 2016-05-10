@@ -5,8 +5,16 @@ header {
   position: fixed;
   transition: all 0.4s ease;
 
+  img {
+    max-width: 110px;
+  }
+
   &.sticky {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, 0.975);
+
+    img {
+      @extend .invert;
+    }
 
     .navigation {
 
@@ -34,14 +42,14 @@ header {
   }
 
   &__btn {
-    background-color: $orange;
+    background-color: $blue;
     margin-right: 24px;
     padding: 7px 14px;
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.075);
     @extend .btn;
 
     &:hover {
-      background-color: $orange-shade;
+      background-color: $blue-shade;
     }
   }
 
@@ -52,8 +60,13 @@ header {
 
     &:hover {
       i {
-        color: $orange;
+        color: $blue;
       }
     }
   }
+}
+
+.invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
