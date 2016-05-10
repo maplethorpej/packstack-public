@@ -307,6 +307,9 @@ footer {
   .introduction .logo {
     padding-top: 120px; }
 
+  .cta-form__container {
+    margin-bottom: 30px; }
+
   footer .col-sm-3, footer .col-sm-6 {
     width: 100%;
     text-align: center; }
