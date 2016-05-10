@@ -120,6 +120,9 @@ h3 {
   font-weight: 700;
   font-size: 34px; }
 
+.center {
+  text-align: center; }
+
 header {
   width: 100%;
   z-index: 99;
@@ -182,10 +185,13 @@ header {
 .info-panel {
   padding: 60px 0;
   background-color: #EDEFED; }
+  .info-panel h4 {
+    color: #555;
+    margin-top: 5px; }
 
 .details {
   height: 320px;
-  margin: 0;
+  margin: 0 0 40px 0;
   background: #FFF; }
   .details__background {
     background: url("../img/pack-spread.jpg") center center no-repeat;
@@ -212,7 +218,7 @@ header {
         background-color: #0FB254; }
 
 .example {
-  margin-top: 80px;
+  margin-top: 30px;
   position: relative;
   overflow: hidden; }
   .example__img img {
@@ -226,7 +232,7 @@ header {
     left: 0;
     text-align: center;
     padding-top: 134px;
-    transition: .4s all ease;
+    transition: all 0.4s ease;
     background: rgba(0, 0, 0, 0.25); }
     .example__title h3 {
       color: #FFF; }
@@ -238,6 +244,11 @@ header {
 
 .title__text {
   transition: .4s opacity ease;
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
   opacity: 0;
   color: #FFF;
   padding: 20px;
