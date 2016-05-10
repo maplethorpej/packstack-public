@@ -163,6 +163,24 @@ header {
   -webkit-filter: invert(100%);
   filter: invert(100%); }
 
+footer {
+  padding: 40px 0;
+  background-color: #181E21; }
+  footer p {
+    color: #FFF; }
+  footer .cta-form__container {
+    max-width: 400px;
+    margin: 0 auto; }
+  footer .cta-form__explanation {
+    margin-top: 0; }
+  footer .social {
+    float: right; }
+    footer .social li {
+      float: left;
+      margin-left: 20px; }
+      footer .social li a {
+        font-size: 40px; }
+
 .introduction {
   min-height: 600px;
   background: #FFF url("../img/bg2.jpg") no-repeat top center;
@@ -205,7 +223,8 @@ header {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
   .details__text {
     padding: 0 35px;
     background: #FFF; }
@@ -264,5 +283,38 @@ header {
   list-style-type: circle; }
   .title__text li {
     margin-bottom: 20px; }
+
+@media screen and (max-width: 990px) {
+  .details {
+    height: auto; }
+    .details__background {
+      height: 260px; }
+    .details__text {
+      padding: 20px 35px; }
+
+  .examples .col-md-4 {
+    margin: 0 auto; } }
+@media screen and (max-width: 500px) {
+  header .col-sm-3, header .col-sm-9 {
+    display: block;
+    width: 100%;
+    text-align: center; }
+    header .col-sm-3 .navigation, header .col-sm-9 .navigation {
+      float: none;
+      padding-top: 15px;
+      display: inline-block; }
+
+  .introduction .logo {
+    padding-top: 120px; }
+
+  footer .col-sm-3, footer .col-sm-6 {
+    width: 100%;
+    text-align: center; }
+  footer .social {
+    margin-bottom: 20px;
+    display: inline-block;
+    float: none; }
+  footer form {
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

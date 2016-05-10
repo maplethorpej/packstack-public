@@ -1,0 +1,30 @@
+footer {
+  padding: 40px 0;
+  background-color: $dark;
+
+  p {
+    color: #FFF;
+  }
+
+  .cta-form__container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .cta-form__explanation {
+    margin-top: 0;
+  }
+
+  .social {
+    float: right;
+
+    li {
+      float: left;
+      margin-left: 20px;
+
+      a {
+        font-size: 40px;
+      }
+    }
+  }
+}

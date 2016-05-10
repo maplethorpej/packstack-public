@@ -4,4 +4,71 @@
 @import "partials/form";
 @import "partials/text";
 @import "partials/header";
+@import "partials/footer";
 @import "partials/views/homepage";
+
+@media screen and (max-width: 990px) {
+
+  .details {
+    height: auto;
+
+    &__background {
+      height: 260px;
+    }
+
+    &__text {
+      padding: 20px 35px;
+    }
+  }
+
+  .examples {
+
+    .col-md-4 {
+      margin: 0 auto;
+    }
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  header {
+
+    .col-sm-3, .col-sm-9 {
+      display: block;
+      width: 100%;
+      text-align: center;
+
+      .navigation {
+        float: none;
+        padding-top: 15px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .introduction {
+    .logo {
+      padding-top: 120px;
+    }
+  }
+
+  footer {
+
+    .col-sm-3, .col-sm-6 {
+      width: 100%;
+      text-align: center;
+    }
+
+    .social {
+      margin-bottom: 20px;
+      display: inline-block;
+      float: none;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+  }
+
+}
